@@ -1,0 +1,25 @@
+name: Tchopa Main CI
+on:
+  push:
+    branches:
+      - main
+env:
+  USER: ${{ github.envent.head_commit.author.name}}
+  EMAIL: ${{ github.envent.head_commit.author.email}}
+  REPO: ${{ github.envent.repository.name}}
+jobs:
+  build:
+    name: Build Node
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - name: run something here
+        run: |
+          npm install
+          npm run gulp
+          echo $USER on $REPO
