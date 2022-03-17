@@ -29,6 +29,3 @@ fi
 newVersion="$first_digit.$second_digit.$third_digit"
 sed -i "s/$node_version/$newVersion/g" ../package.json
 
-
-git config --global user.email "mitch.chanza@gmail.com"
-git config --global user.name "Mitch Chanza"
