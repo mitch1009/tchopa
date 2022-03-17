@@ -1,0 +1,11 @@
+.home {
+  text-align: center;
+  color: red;
+  font-size: 16rem !important;
+}
+.home div:first-child {
+  text-align: right;
+}
+.home div:last-child {
+  text-align: left;
+}
