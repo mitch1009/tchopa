@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "commit": "git add && git commit  -m ",
+    "nextVersion": "version=$npm_package_version && IFS='.' read -ra neversion <<<\"$version\"",
+    "eher": " var=$npm_package_version && IFS='.' read -ra neversion <<<\"${var}\" ",
+    "version": "sh ./config/run.sh",
+    "commit:tags": "git tag -a -m \" %npm_package_name v%npm_package_version tag\" v%npm_package_version",
+    "push": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
