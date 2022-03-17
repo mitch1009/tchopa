@@ -1,6 +1,5 @@
 .home {
   text-align: center;
-  color: red;
   font-size: 16rem !important;
   div{
     &:first-child {
@@ -11,4 +10,17 @@
     }
 
   }
+}
+
+// Color Variables
+$primary : #FF00FF;
+$secondary : #1F004F;
+$over : #1F9067;
+
+// Use the color variables
+h1{
+  color: $primary;
+}
+p{
+  color: $secondary;
 }

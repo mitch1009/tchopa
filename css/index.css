@@ -1,6 +1,5 @@
 .home {
   text-align: center;
-  color: red;
   font-size: 16rem !important;
 }
 .home div:first-child {
@@ -8,4 +7,12 @@
 }
 .home div:last-child {
   text-align: left;
+}
+
+h1 {
+  color: #FF00FF;
+}
+
+p {
+  color: #1F004F;
 }
